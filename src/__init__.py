@@ -1,0 +1,3 @@
+"""
+HuggingFace Course source package.
+"""
