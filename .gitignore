@@ -1,0 +1,35 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Virtual environments
+venv/
+env/
+.env
+.venv/
+
+# Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# HuggingFace models and datasets
+/models/
+/data/
+/results/
+/goal_classifier_model/
+
+# Logs
+*.log
+.coverage
+htmlcov/
