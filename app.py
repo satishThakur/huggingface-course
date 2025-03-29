@@ -44,7 +44,6 @@ FEEDBACK = {
 HF_MODEL_NAME = "satish001/goal-classifier"
 
 # Load the model and tokenizer from Hugging Face Hub
-@gr.load(cache_examples=True)
 def load_model():
     """Load the goal classifier model and tokenizer."""
     print(f"Loading model from Hugging Face Hub: {HF_MODEL_NAME}")

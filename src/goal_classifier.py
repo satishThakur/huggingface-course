@@ -304,15 +304,6 @@ if __name__ == "__main__":
     # Create sample data if not skipping training
     if not args.skip_train:
         print("Creating sample data...")
-        data = create_sample_data()
-        print(f"Created dataset with {len(data)} examples")
-        
-        # Prepare datasets
-        print("Preparing datasets...")
-        train_dataset, val_dataset = prepare_datasets(data)
-    
-    # Check if model already exists
-    model_path = "./goal_classifier_model"
     if os.path.exists(model_path) and os.path.isdir(model_path):
         print(f"Loading existing model from {model_path}")
         model = AutoModelForSequenceClassification.from_pretrained(model_path)
